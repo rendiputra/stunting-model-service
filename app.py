@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 app = Flask(__name__)
-app.config["DEBUG"] = True
+# app.config["DEBUG"] = False
 
 @app.route('/', methods=['GET'])
 def hello():
