@@ -5,6 +5,7 @@ import joblib
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
+import os
 
 app = Flask(__name__)
 # app.config["DEBUG"] = False
@@ -46,4 +47,4 @@ def berat():
 
   return make_response(jsonify({'data': b}), 200)
 # app.run(host='0.0.0.0', port=8080)
-app.run()
+app.run(debug=True, port=os.getenv("PORT", default=5000))
