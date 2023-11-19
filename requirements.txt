@@ -5,5 +5,5 @@ click==7.1.2
 Flask==2.2.3
 Werkzeug==2.2.2
 gunicorn==21.2.0
-itsdangerous==1.1.0
+itsdangerous
 Jinja2==2.11.3
