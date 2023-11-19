@@ -49,4 +49,4 @@ def berat():
   # return make_response(jsonify({'data': b}), 200)
   return jsonify({'data': b})
 # app.run(host='0.0.0.0', port=8080)
-app.run(debug=False, port=os.getenv("PORT", default=5000))
+app.run(debug=False, use_debugger=False, use_reloader=False, port=os.getenv("PORT", default=5000))
