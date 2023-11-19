@@ -1,9 +1,9 @@
 pandas==1.5.3
 numpy==1.24.2
 scikit-learn==1.2.2
-click==7.1.2
 Flask==2.2.3
 Werkzeug==2.2.2
 gunicorn==21.2.0
 itsdangerous
 Jinja2==2.11.3
+click
