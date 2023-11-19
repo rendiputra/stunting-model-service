@@ -30,7 +30,8 @@ def stunting():
   a = np.array(pred)
   b = a.tolist()
 
-  return make_response(jsonify({'data': b}), 200)
+  # return make_response(jsonify({'data': b}), 200)
+  return jsonify({'data': b})
 
 @app.route('/bb-u', methods=['GET'])
 def berat():
@@ -45,6 +46,7 @@ def berat():
   a = np.array(pred)
   b = a.tolist()
 
-  return make_response(jsonify({'data': b}), 200)
+  # return make_response(jsonify({'data': b}), 200)
+  return jsonify({'data': b})
 # app.run(host='0.0.0.0', port=8080)
 app.run(debug=True, port=os.getenv("PORT", default=5000))
