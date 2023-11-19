@@ -9,7 +9,13 @@ import pandas as pd
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
-@app.route('/', methods=['POST'])
+@app.route('/', methods=['GET'])
+def hello():
+  data = 'Hallo World'
+
+  return make_response(jsonify({'data': data}), 200)
+
+@app.route('/tt-u', methods=['GET'])
 def hello():
   data = request.get_json()
   umur = data['umur']
@@ -24,7 +30,7 @@ def hello():
 
   return make_response(jsonify({'data': b}), 200)
 
-@app.route('/bb-u', methods=['POST'])
+@app.route('/bb-u', methods=['GET'])
 def berat():
   data = request.get_json()
   umur = data['umur']
