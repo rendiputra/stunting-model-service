@@ -16,7 +16,7 @@ def hello():
   return make_response(jsonify({'data': data}), 200)
 
 @app.route('/tt-u', methods=['GET'])
-def hello():
+def stunting():
   data = request.get_json()
   umur = data['umur']
   jk = data['jk']
