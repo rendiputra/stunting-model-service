@@ -13,7 +13,8 @@ app.config["DEBUG"] = True
 def hello():
   data = 'Hallo World'
 
-  return make_response(jsonify({'data': data}), 200)
+  # return make_response(jsonify({'data': data}), 200)
+  return jsonify({'data': data})
 
 @app.route('/tt-u', methods=['GET'])
 def stunting():
@@ -44,4 +45,5 @@ def berat():
   b = a.tolist()
 
   return make_response(jsonify({'data': b}), 200)
-app.run(host='0.0.0.0', port=8080)
+# app.run(host='0.0.0.0', port=8080)
+app.run()
