@@ -1,4 +1,5 @@
 # python3 -m flask run
+# gunicorn main:app -b 127.0.0.1:5000
 from flask import Flask, jsonify, request, make_response
 
 import joblib
