@@ -25,7 +25,7 @@ def stunting():
   jk = data['jk']
   tinggi = data['tinggi']
 
-  knn = joblib.load('knn.model')
+  knn = joblib.load('knn_stunting.model')
   test = pd.DataFrame({'Umur (bulan)': [umur], 'Jenis Kelamin': [jk], 'Tinggi Badan (cm)': [tinggi]})
   pred = knn.predict(test)
   a = np.array(pred)
